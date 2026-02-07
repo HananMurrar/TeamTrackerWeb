@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-serif m-0 p-0 bg-white">
+    <!-- navbar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md py-4 px-8">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo.png" alt="logo" class="h-8 w-8">
+                <a href="index.html" class="text-black text-base font-bold pr-40">Team Tracker</a>
+            </div>
+
+            <ul class="flex justify-end space-x-5">
+                <li><a href="#about" class="relative text-black hover:text-[#4651b1]">About</a></li>
+                <li><a href="#contact" class="relative text-black hover:text-[#4651b1]">Contact</a></li>
+                <li><a href="login.html" class="relative text-black hover:text-[#4651b1]">Login</a></li>
+                <li><a href="regestration.html" class="relative text-black hover:text-[#4651b1]">Regestration</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="bg-white flex flex-col md:flex-row items-center justify-center py-20 max-w-6xl mx-auto px-4 gap-10">
+        <div class="text-center md:text-left">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+                <span class="text-[#4651b1]">Team</span>Tracker
+            </h1>
+
+            <p class="text-gray-600 max-w-md mt-4 text-lg">
+                Manage projects and tasks, track progress, collaborate with your team, get AI driven insights — all in one place
+            </p>
+
+            <div class="mt-6 flex gap-4 justify-center md:justify-start">
+                <a href="regestration.html" class="bg-[#4651b1] text-white px-6 py-3 rounded-lg hover:bg-[#3b4599] transition">Get Started</a>
+                <a href="login.html" class="border border-[#4651b1] text-[#4651b1] px-6 py-3 rounded-lg hover:bg-[#4651b1] hover:text-white transition">Login</a>
+            </div>
+        </div>
+
+        <div class="flex justify-center md:justify-start">
+            <img src="images/team.jpg" alt="team" class="h-80 md:h-[350px] w-auto rounded-lg">
+        </div>
+    </header>
+
+    <!-- about section -->
+    <section id="about" class="flex flex-col items-center justify-center bg-white rounded-lg p-8 mx-auto my-16 shadow-[0_0_15px_rgba(0,0,0,0.2)] w-full max-w-6xl min-h-[400px] text-center">
+        <h1 class="flex space-x-2 mb-6 justify-center">
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">A</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">B</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">O</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">U</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">T</span>
+        </h1>
+
+        <img src="images/logo.png" alt="logo" class="h-14 w-14 mb-6 rounded-lg">
+
+        <p class="text-black text-lg">
+            The team tracker is a smart management dashboard that tracks projects and tasks, and provides AI-driven insights to improve workflow and productivity, 
+            it helps teams identify delays, assess project health, and prioritize tasks, ensuring projects stay on track
+        </p>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="flex flex-col items-center justify-center bg-white rounded-lg p-8 mx-auto my-16 shadow-[0_0_15px_rgba(0,0,0,0.2)] w-full max-w-6xl min-h-[400px] text-center">
+        <h1 class="flex space-x-2 mb-6 justify-center">
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">C</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">O</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">N</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">T</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">A</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">C</span>
+            <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">T</span>
+        </h1>
+
+        <img src="images/logo.png" alt="logo" class="h-14 w-14 mb-6 rounded-lg">
+
+        <p class="text-black text-lg">
+            Contact us via <a href="#" class="text-black hover:font-bold">Email</a>
+        </p>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#4651b1] text-white text-center py-6">
+        <p>Team Tracker <span>&copy;</span></p>
+    </footer>
+</body>
+
+</html>
