@@ -43,14 +43,14 @@
 ├── mongosh.exe # MongoDB shel
 ```
 #### How to run
-```bash
 1. Install dependencies:
-      npm init -y
-      npm install express mongoose bcryptjs body-parser cors
+    npm init -y
+    npm install express mongoose bcryptjs body-parser cors
 
 2. Start mongoDB:
-      .\mongosh 
-      exit 
+    .\mongosh 
+    exit
+
 
 3. Start the backend server:
       node js/server.js
