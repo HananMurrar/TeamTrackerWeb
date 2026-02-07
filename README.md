@@ -45,7 +45,7 @@
 ```
 #### How to run
 1. Install dependencies:
-    ```bash
+    ```
     npm init -y
     npm install express mongoose bcryptjs body-parser cors
     ```
@@ -67,4 +67,3 @@
     ```
 
 #### Demo
-
