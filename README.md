@@ -30,19 +30,20 @@
 ```
 📁 TeamTracker/
 ├─ js/
-│   ├── regestration.js
-│   ├── login.js
-│   ├── profile.js
-│   ├── dashboard.js     # Functions related to dashboard features
-│   ├── server.js
-│   └── auth.js          # Handles user authentication for protected page
+│  ├── regestration.js
+│  ├── login.js
+│  ├── profile.js
+│  ├── dashboard.js     # Functions related to dashboard features
+│  ├── server.js
+│  └── auth.js          # Handles user authentication for protected page
 ├── index.html
 ├── regestration.html
 ├── login.html
 ├── profile.html
 ├── dashboard.html
-├── mongosh.exe          # MongoDB shel
+├── mongosh.exe         # MongoDB shel
 ```
+
 #### How to run
 1. Install dependencies:
     ```
