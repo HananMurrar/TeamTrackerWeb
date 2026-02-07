@@ -1,5 +1,6 @@
 ### Team tracker web
-- 🏢 Team tracker is website built for companies to manage projects, tasks, and team members efficiently, it helps teams track work and monitor the progress of projects and tasks, and the dashboard includes AI-style insights that analyze project and task data to suggest improvements and highlight risks
+- 🏢 Team tracker is website built for companies to manage projects, tasks, and team members efficiently, it helps teams track work and monitor the progress of projects and tasks
+- 📶 The dashboard includes AI-style insights that analyze project and task data to suggest improvements and highlight risks
 
 #### Features
 - 🔗 Authentication:
@@ -32,15 +33,15 @@
 │   ├── regestration.js
 │   ├── login.js
 │   ├── profile.js
-│   ├── dashboard.js
+│   ├── dashboard.js     # Functions related to dashboard features
 │   ├── server.js
-│   └── auth.js
+│   └── auth.js          # Handles user authentication for protected page
 ├── index.html
 ├── regestration.html
 ├── login.html
 ├── profile.html
 ├── dashboard.html
-├── mongosh.exe # MongoDB shel
+├── mongosh.exe          # MongoDB shel
 ```
 #### How to run
 1. Install dependencies:
@@ -50,18 +51,18 @@
     ```
 
 2. Start mongoDB:
-    ```bash
+    ```
     .\mongosh 
     exit
     ```
 
 3. Start the backend server:
-    ```bash
+    ```
     node js/server.js
     ```
 
 4. Open your browser and go to:
-    ```dash
+    ```
     http://localhost:3000
     ```
 
