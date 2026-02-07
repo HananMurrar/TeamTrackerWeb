@@ -44,19 +44,26 @@
 ```
 #### How to run
 1. Install dependencies:
+    ```bash
     npm init -y
     npm install express mongoose bcryptjs body-parser cors
+    ```
 
 2. Start mongoDB:
+    ```bash
     .\mongosh 
     exit
-
+    ```
 
 3. Start the backend server:
-      node js/server.js
+    ```bash
+    node js/server.js
+    ```
 
 4. Open your browser and go to:
-      http://localhost:3000
+    ```dash
+    http://localhost:3000
+    ```
 
 #### Demo
 
