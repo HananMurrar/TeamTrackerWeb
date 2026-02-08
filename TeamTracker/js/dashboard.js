@@ -108,7 +108,7 @@ function renderTasks() {
                 </h2><div class="space-y-3">`;
 
     sortedTasks.forEach((t, i) => {
-        const project = projects.find(p => p._id === t.projectId);
+        const project = projects.find(p => p._id.toString() === t.projectId.toString());
 
         html += `<div class="flex justify-between items-center p-4 border rounded ${isOverdue(t.due) && t.status === "In Progress" ? "bg-red-50" : ""}">
             <div class="flex-1">
@@ -244,7 +244,10 @@ async function addProject() {
     try {
         const res = await fetch('http://localhost:3000/api/projects', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`   // <-- ADD THIS
+            },
             body: JSON.stringify({ name, due: dueRaw || "N/A" })
         });
         const project = await res.json();
@@ -279,7 +282,10 @@ async function addTask() {
     try {
         const res = await fetch('http://localhost:3000/api/tasks', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`   // <-- ADD THIS
+            },
             body: JSON.stringify({ title, projectId, due: dueRaw || "N/A" })
         });
         const task = await res.json();
@@ -411,7 +417,7 @@ function generateAIInsights() {
 
         if (delayedProjectsRatio >= 0.3) {
             aiContainer.appendChild(
-                createInsight("📁 Multiple projects show delay signals, resource allocation may need review", "warning")
+                createInsight("📁 Project(s) show delay signals, resource allocation may need review", "warning")
             );
         }
     }
