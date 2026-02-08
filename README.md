@@ -51,26 +51,18 @@
 #### How to run:
 
 ##### 1. Install dependencies:
-    ```
     npm init -y
     npm install express mongoose bcryptjs body-parser cors
-    ```
 
 ##### 2. Start mongoDB:
-    ```
     .\mongosh 
     exit
-    ```
 
 ##### 3. Start the backend server:
-    ```
     node js/server.js
-    ```
 
 ##### 4. Open your browser and go to:
-    ```
     http://localhost:3000
-    ```
 
 #### Demo:
 - [Watch the demo video (download)]( https://github.com/HananMurrar/TeamTrackerWeb/raw/main/TeamTracker/Demo.mov)
