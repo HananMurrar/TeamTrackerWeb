@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '..')));
 
 // connect to mongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/teamtrackerDB')
-    .then(() => console.log('MongoDB Connected'))
+    .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
 // user schema
@@ -29,7 +29,7 @@ const User = mongoose.model('User', userSchema);
 const projectSchema = new mongoose.Schema({
     name: { type: String, required: true },
     due: { type: String, default: "N/A" },
-    status: { type: String, default: "In Progress" }
+    status: { type: String, default: "In progress" }
 });
 
 const Project = mongoose.model('Project', projectSchema);
@@ -39,7 +39,7 @@ const taskSchema = new mongoose.Schema({
     title: { type: String, required: true },
     projectId: { type: mongoose.Schema.Types.ObjectId, ref: 'Project', required: true },
     due: { type: String, default: "N/A" },
-    status: { type: String, default: "In Progress" }
+    status: { type: String, default: "In progress" }
 });
 
 const Task = mongoose.model('Task', taskSchema);
@@ -148,7 +148,7 @@ app.post('/api/projects', authMiddleware, async (req, res) => {
     const { name, due } = req.body;
 
     try {
-        const project = new Project({ name, due, status: "In Progress" });
+        const project = new Project({ name, due, status: "In progress" });
         await project.save();
         res.status(201).json(project);
     } catch (err) {
@@ -182,7 +182,7 @@ app.post('/api/tasks', authMiddleware, async (req, res) => {
     const { title, projectId, due } = req.body;
 
     try {
-        const task = new Task({ title, projectId, due, status: "In Progress" });
+        const task = new Task({ title, projectId, due, status: "In progress" });
         await task.save();
         res.status(201).json(task);
     } catch (err) {
