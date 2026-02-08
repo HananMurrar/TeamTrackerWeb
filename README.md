@@ -14,7 +14,7 @@
 - 🔗 Dashboard – dynamic display:
   - Shows projects, tasks, and team members
   - Project management: create projects with a name and due date
-  - Task management: create tasks with a name, assign to projects, and set due date
+  - Task management: create tasks with a name, assign to projects, and set due dates
   - Team management: display all registered team members
   - Profile management: users can update name, email, and password
 
