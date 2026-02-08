@@ -68,5 +68,6 @@
     ```
 
 #### Demo
-- [Watch the demo video (download)]( https://github.com/HananMurrar/TeamTrackerWeb/tree/main/TeamTracker/Demo.mov)
+- [Watch the demo video (download)]( https://github.com/HananMurrar/TeamTrackerWeb/raw/main/TeamTracker/Demo.mov)
+
  
