@@ -29,7 +29,7 @@ const User = mongoose.model('User', userSchema);
 const projectSchema = new mongoose.Schema({
     name: { type: String, required: true },
     due: { type: String, default: "N/A" },
-    status: { type: String, default: "In progress" }
+    status: { type: String, default: "In Progress" }
 });
 
 const Project = mongoose.model('Project', projectSchema);
@@ -39,7 +39,7 @@ const taskSchema = new mongoose.Schema({
     title: { type: String, required: true },
     projectId: { type: mongoose.Schema.Types.ObjectId, ref: 'Project', required: true },
     due: { type: String, default: "N/A" },
-    status: { type: String, default: "In progress" }
+    status: { type: String, default: "In Progress" }
 });
 
 const Task = mongoose.model('Task', taskSchema);
@@ -148,7 +148,7 @@ app.post('/api/projects', authMiddleware, async (req, res) => {
     const { name, due } = req.body;
 
     try {
-        const project = new Project({ name, due, status: "In progress" });
+        const project = new Project({ name, due, status: "In Progress" });
         await project.save();
         res.status(201).json(project);
     } catch (err) {
@@ -182,7 +182,7 @@ app.post('/api/tasks', authMiddleware, async (req, res) => {
     const { title, projectId, due } = req.body;
 
     try {
-        const task = new Task({ title, projectId, due, status: "In progress" });
+        const task = new Task({ title, projectId, due, status: "In Progress" });
         await task.save();
         res.status(201).json(task);
     } catch (err) {
@@ -205,4 +205,5 @@ app.put('/api/tasks/:id', authMiddleware, async (req, res) => {
 // start server
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
 
