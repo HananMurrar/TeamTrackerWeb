@@ -63,8 +63,3 @@
 
 ##### 4. Open your browser and go to:
     http://localhost:3000
-
-#### Demo:
-- [Watch the demo video (download)]( https://github.com/HananMurrar/TeamTrackerWeb/raw/main/TeamTracker/Demo.mov)
-
- 
