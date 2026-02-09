@@ -118,7 +118,7 @@ app.put('/api/profile', authMiddleware, async (req, res) => {
         if (password) user.password = await bcrypt.hash(password, 10);
 
         await user.save();
-        res.json({ msg: 'Updated successfully' });
+        res.json({ msg: 'Successfully updated'});
     } catch (err) {
         res.status(500).json({ msg: 'Server error', error: err.message });
     }
@@ -205,3 +205,4 @@ app.put('/api/tasks/:id', authMiddleware, async (req, res) => {
 // start server
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+
