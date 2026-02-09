@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
 
 <body class="font-serif m-0 p-0 bg-white">
@@ -21,7 +23,7 @@
     </nav>
 
     <!-- login section -->
-    <section id="login" class="flex flex-col items-center justify-center bg-white rounded-xl p-8 mx-4 my-16 shadow-[0_0_15px_rgba(0,0,0,0.2)] max-w-md mx-auto">
+    <section id="login" class="flex flex-col items-center justify-center bg-white rounded-xl p-8 mx-4 my-16 shadow-[0_0_15px_rgba(0,0,0,0.2)] max-w-md mx-auto min-h-[450px]">
         <h1 class="flex space-x-2 mb-8 justify-center text-2xl">
             <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">L</span>
             <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">O</span>
@@ -29,6 +31,16 @@
             <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">I</span>
             <span class="bg-[#4651b1] text-white px-3 py-2 rounded-md font-bold">N</span>
         </h1>
+
+        <div class="flex gap-6 mb-6">
+            <a href="#" class="text-2xl text-red-500 hover:scale-110 transition">
+                <i class="fa-brands fa-google"></i>
+            </a>
+
+            <a href="#" class="text-2xl text-blue-500 hover:scale-110 transition">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
 
         <form id="login" class="w-full flex flex-col gap-4">
             <label for="email" class="sr-only">Email</label>
