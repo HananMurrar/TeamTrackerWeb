@@ -6,10 +6,10 @@ The dashboard includes AI-style insights that analyze project and task data to s
 #### Features:
 ##### Authentication:
 - User registration and login: users can create an account and log in to access the system
-- Secure passwords: passwords are never stored as plain text, they are hashed using bcrypt, which scrambles them so even if someone gets the database, they can’t read the passwords
-- JWT based authentication: after logging in, the server creates a JWT (JSON web token), the token proves the user is authenticated, it contains basic user info (like ID and email) and is signed so it cannot be altered
+- Secure passwords: passwords are never stored as plain text, they are hashed using `bcrypt`, which scrambles them so even if someone gets the database, they can’t read the passwords
+- JWT based authentication: after logging in, the server creates a `JWT` (JSON web token), the token proves the user is authenticated, it contains basic user information (like ID and email) and is signed so it cannot be altered
 - Client side protection: the `auth.js` checks if the user has a valid token in `localStorage`, if the token is missing, the user is automatically redirected to the login page, this prevents unauthorized users from opening protected pages directly
-- Protected routes: the `server.js` uses JWT middleware to protect certain routes, when a request is made, the middleware checks the token in the request headers, only users with a valid token can access the data, if the token is invalid or missing, the server denies access with an error
+- Protected routes: the `server.js` uses `JWT` middleware to protect certain routes, when a request is made, the middleware checks the token in the request headers, only users with a valid token can access the data, if the token is invalid or missing, the server denies access with an error
 
 ##### Dashboard – dynamic display:
 - Shows projects, tasks, and team members
